@@ -4,12 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title></title>
+  <title>Closures</title>
   <link rel="stylesheet" href="../base.css">
 </head>
 
 <body>
+  <script>
+    function outer() {
+      const outerVar = "Hey! I am the outer var";
+      function inner() {
+        const innerVar = "Hey! I am the inner var";
+        console.log(innerVar);
+        console.log(outerVar);
+      }
+      return inner;
+    }
 
+    const innerFN = outer();
+    innerFN();
+
+    function createGreeting(greeting = "") {
+      const myGreet = greeting.toUpperCase();
+      return function(firstName) {
+        return function(sweetMessage) {
+          return `${myGreet} ${firstName} ${sweetMessage}`
+        }
+      }
+    }
+
+    console.log(createGreeting("Good afternoon")("Janet")("I love you"))
+
+    const sayHi = createGreeting("Hi");
+    const sayHello = createGreeting("Hello")
+
+    console.log(sayHi("Janet"));
+  </script>
 </body>
-
 </html>

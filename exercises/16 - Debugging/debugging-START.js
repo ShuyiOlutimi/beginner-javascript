@@ -36,7 +36,7 @@ function greet(name) {
 function go() {
   const name = doctorize(greet('Wes'));
   console.log(name);
-}
+} 
 
 const button = document.querySelector('.bigger');
 button.addEventListener('click', function(e) {
