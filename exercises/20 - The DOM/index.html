@@ -9,18 +9,43 @@
 </head>
 
 <body>
-  <div class="items">
-    <p>Hi I'm a item</p>
-    <div>
-      <h2>Sub Div</h2>
-      <p>Hi I'm a item</p>
+  <img class="huge" src="https://picsum.photos/600" alt="">
 
+  <div class="items">
+    <div class="item">
+      <img class="jay" src="https://picsum.photos/200" data-first="Janet" data-last="Adeniyi" alt="">
+      <img class="" src="https://picsum.photos/600" alt="">
+      <img class="" src="https://picsum.photos/600" alt="">
+      <img class="" src="https://picsum.photos/600" alt=""
+      <p>Hi I'm a item</p>
     </div>
-    <img src="https://source.unsplash.com/random/300x300" />
-    <p>Hi I'm a item</p>
-    <p>Hi I'm a item</p>
+
+    <div class="item item2">
+      <img src="https://picsum.photos/200" alt="">
+      <h2>I am a heading
+        <span>I am hidden!</span>
+      </h2>
+      <p class="">Hi I'm a item</p>
+    </div>
+
+    <article>
+      <h2>I am an article</h2>
+      <p class="pizza">This is how many pizza I ate</p>
+    </article>
   </div>
 </body>
 
-<script src="the-dom.js"></script>
+<style>
+  img {
+    transition: all 0.2s;
+  }
+
+  .round {
+    border-radius: 50%;
+    transform: rotate(.25turn) scale(1);
+    box-shadow: 0 0 20px red;
+  }
+</style>
+
+<script src="creating.js"></script>
 </html>
