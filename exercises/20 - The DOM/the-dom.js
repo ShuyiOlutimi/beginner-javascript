@@ -42,4 +42,4 @@ const janet = document.querySelector(".jay");
 console.log(janet.dataset);
 janet.addEventListener("click", function(){
     alert(`Welcome ${janet.dataset.first}${janet.dataset.last}`)
-});
+}); 
